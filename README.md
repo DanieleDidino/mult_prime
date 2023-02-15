@@ -13,14 +13,14 @@ participant selection, outlier classification, etc.) and for the analyses includ
 EXPERIMENT 1
 For experiment 1 there are 3 R-markdown scripts (that produce 3 html files):
 
-1.1. “exp1_preprocessing.Rmd”: reports data pre-processing (e.g., exclude participants with bad performance, classify outliers, demographics, etc.).
+1. “exp1_preprocessing.Rmd”: reports data pre-processing (e.g., exclude participants with bad performance, classify outliers, demographics, etc.).
 
-1.2. “exp1_analysis.Rmd” reports the analysis included in the paper, it includes:
-    - 2a) Density plots and statistics on RTs.
-    - 2b) Bayesian factors (neutral prime vs. the other conditions).
-    - 2c) Frequentist t-tests (neutral prime vs. the other conditions).
+2. “exp1_analysis.Rmd” reports the analysis included in the paper, it includes:
+    - Density plots and statistics on RTs.
+    - Bayesian factors (neutral prime vs. the other conditions).
+    - Frequentist t-tests (neutral prime vs. the other conditions).
 
-1.3 "exp1_analysis_dRT.Rmd" reports explorative analysis using the delta RTs (RT non-neutral condition minus RT neutral condition).
+3. "exp1_analysis_dRT.Rmd" reports explorative analysis using the delta RTs (RT non-neutral condition minus RT neutral condition).
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------
 
