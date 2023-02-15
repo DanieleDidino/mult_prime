@@ -1,0 +1,56 @@
+"0","# Plot
+prime_plot <- 
+ list(exp1_RT_distr =
+        exp1_rainplot %>% 
+        mutate(
+          neutral = if_else(neutral == 'neutral', 'Neutral', 'Other'),
+          problem_size = if_else(problem_size == 'large', 'Large', 'Small')
+          ) %>% 
+        ggplot(aes(x = cond, y = DV, fill = neutral)) +
+        geom_flat_violin(aes(color = 'grey80'),
+                         position = position_nudge(x = 0.18, y = 0),
+                         adjust = 1.5,
+                         trim = FALSE,
+                         alpha = .5,
+                         colour = 'grey80') +
+        geom_point(aes(x = as.numeric(factor(cond)) - 0.23, y = DV, colour = neutral),
+                   position = position_jitter(width = 0.05, height = 0),
+                   size = 1,
+                   shape = 20) +
+        geom_boxplot(aes(x = cond, y = DV, fill = neutral),
+                     outlier.shape = NA,
+                     alpha = 0.5,
+                     width = 0.3,
+                     colour = 'black') +
+        geom_text(data = segs,
+                  aes(x = cond,  y = ys, label = lab),
+                  size = 3.5) + 
+        geom_vline(xintercept = c(c(0:3) + 1.65),
+                   linetype = 'solid',
+                   color = 'grey80',
+                   size = 0.3) +
+        # scale_colour_brewer(palette = 'Dark2') +
+        # scale_fill_brewer(palette = 'Dark2') +
+        labs(x = 'Prime condition', y = 'RTs') +
+        facet_wrap(~ problem_size, ncol = 1, strip.position = 'right') +
+        theme(
+          #panel.grid.major = element_blank(),
+          #panel.grid.minor = element_blank(),
+          panel.background = element_blank(),
+          panel.grid.major.y = element_line(colour = 'grey90'),
+          panel.grid.minor.y = element_line(colour = 'grey90'),
+          panel.grid.major.x = element_blank(),
+          panel.grid.minor.x = element_blank(),
+          legend.title = element_blank(),
+          strip.background = element_blank(),
+          text = element_text(size = 15),
+          axis.text = element_text(size = 12, colour = 'black'),
+          axis.text.x = element_text(angle = 45, hjust = 1),
+          # axis.title = element_text(size = 14),
+          panel.border = element_rect(colour = 'black', fill = NA, size = 0.5)
+        )
+ )
+"
+"2","Error in exp1_rainplot %>% mutate(neutral = if_else(neutral == ""neutral"",  : 
+  could not find function ""%>%""
+"

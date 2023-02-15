@@ -1,0 +1,3 @@
+"0","exp2_pdt_sj <- "
+"0","  exp2_pdt %>% "
+"0","  filter(!(sj %in% c('sj15', 'sj17', 'sj24', 'sj28', 'sj29', 'sj31')))"

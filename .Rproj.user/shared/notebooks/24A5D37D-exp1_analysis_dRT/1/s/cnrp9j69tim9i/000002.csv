@@ -1,0 +1,9 @@
+"0","exp1_dRT <- "
+"0","  exp1 %>% "
+"0","  return_delta_RT(.,"
+"0","                  y_col = RT,"
+"0","                  cols_to_group = c('sj', 'problem_size'),"
+"0","                  cols_to_subtract = c('prime_cond'),"
+"0","                  neutral_cond = 'neutral')"
+"2","`summarise()` has grouped output by 'sj', 'problem_size'. You can override using the `.groups` argument.
+"

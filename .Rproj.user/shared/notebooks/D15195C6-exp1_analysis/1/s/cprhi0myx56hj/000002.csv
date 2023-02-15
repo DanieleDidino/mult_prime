@@ -1,0 +1,70 @@
+"0","library('ggpubr')"
+"2","Registered S3 method overwritten by 'data.table':
+  method           from
+  print.data.table     
+"
+"0","library('here')"
+"2","here() starts at D:/mult_prime
+"
+"0","library('kableExtra')"
+"2","
+Attaching package: ‘kableExtra’
+
+"
+"2","The following object is masked from ‘package:dplyr’:
+
+    group_rows
+
+"
+"0","# library('knitr')"
+"0","library('plotly')"
+"2","Registered S3 method overwritten by 'htmlwidgets':
+  method           from         
+  print.htmlwidget tools:rstudio
+"
+"2","
+Attaching package: ‘plotly’
+
+"
+"2","The following object is masked from ‘package:ggplot2’:
+
+    last_plot
+
+"
+"2","The following object is masked from ‘package:stats’:
+
+    filter
+
+"
+"2","The following object is masked from ‘package:graphics’:
+
+    layout
+
+"
+"0","library('ggridges')"
+"0","library('tidyverse')"
+"0","library('BayesFactor')"
+"2","Loading required package: coda
+"
+"2","Loading required package: Matrix
+"
+"2","
+Attaching package: ‘Matrix’
+
+"
+"2","The following objects are masked from ‘package:tidyr’:
+
+    expand, pack, unpack
+
+"
+"2","************
+Welcome to BayesFactor 0.9.12-4.2. If you have questions, please contact Richard Morey (richarddmorey@gmail.com).
+
+Type BFManual() to open the manual.
+************
+"
+"0","# Load my functions"
+"0","source(here('funcs', 'load_my_functions.R'))"
+"0",""
+"0","# Load data"
+"0","exp1 <- readRDS(here('data', 'processed', 'exp1_data.rds'))"

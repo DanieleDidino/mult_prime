@@ -1,0 +1,7 @@
+"0","exp2_pdt_sj %>% "
+"0","  return_stats(c('SOA', 'prime_type', 'probe_type'), DV = 'acc') %>% "
+"0","  make_table('Accuracy')"
+"2","`summarise()` has grouped output by 'sj', 'SOA', 'prime_type'. You can override using the `.groups` argument.
+"
+"2","`summarise()` has grouped output by 'SOA', 'prime_type'. You can override using the `.groups` argument.
+"

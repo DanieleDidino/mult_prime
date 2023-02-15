@@ -1,0 +1,14 @@
+"0","exp2_stats <-"
+"0","  exp2 %>% "
+"0","  return_stats(c('SOA', 'problem_size', 'prime_cond'))"
+"2","`summarise()` has grouped output by 'sj', 'SOA', 'problem_size'. You can override using the `.groups` argument.
+"
+"2","`summarise()` has grouped output by 'SOA', 'problem_size'. You can override using the `.groups` argument.
+"
+"0","# Print results in a file"
+"0","exp2_stats %>% "
+"0","  print_result('exp2_stats_RTs')"
+"0",""
+"0","# Show the table with the statistics"
+"0","exp2_stats %>%"
+"0","  make_table('Prime type statistics')"
