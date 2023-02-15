@@ -10,7 +10,8 @@ participant selection, outlier classification, etc.) and for the analyses includ
 
 ----
 
-EXPERIMENT 1
+**EXPERIMENT 1**
+
 For experiment 1 there are 3 R-markdown scripts (that produce 3 html files):
 
 1. **exp1_preprocessing.Rmd** reports data pre-processing (e.g., exclude participants with bad performance, classify outliers, demographics, etc.).
@@ -22,9 +23,9 @@ For experiment 1 there are 3 R-markdown scripts (that produce 3 html files):
 
 3. **exp1_analysis_dRT.Rmd** reports explorative analysis using the delta RTs (RT non-neutral condition minus RT neutral condition).
 
-------------------------------------------------------------------------------------------------------------------------------------------------------
+----
 
-EXPERIMENT 2
+**EXPERIMENT 2**
 
 For experiment 2 there are 4 R-markdown scripts (that produce 4 html files):
 
@@ -39,9 +40,9 @@ For experiment 2 there are 4 R-markdown scripts (that produce 4 html files):
 
 4. **exp2_analysis_dRT.Rmd** reports explorative analysis using the delta RTs (RT non-neutral condition minus RT neutral condition).
 
-------------------------------------------------------------------------------------------------------------------------------------------------------
+----
 
-EXPERIMENT 3
+**EXPERIMENT 3**
 
 For experiment 3 there are also 4 R-markdown scripts (that produce 4 html files):
 
